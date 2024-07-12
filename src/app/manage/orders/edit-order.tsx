@@ -162,7 +162,7 @@ export default function EditOrder({
                   <FormItem>
                     <div className='grid grid-cols-4 items-center justify-items-start gap-4'>
                       <FormLabel>Trạng thái</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl className='col-span-3'>
                           <SelectTrigger className='w-[200px]'>
                             <SelectValue placeholder='Trạng thái' />
