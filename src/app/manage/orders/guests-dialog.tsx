@@ -39,7 +39,11 @@ export const columns: ColumnDef<GuestItem>[] = [
   {
     accessorKey: 'tableNumber',
     header: 'Số bàn',
-    cell: ({ row }) => <div className='capitalize'>{row.getValue('tableNumber')}</div>
+    cell: ({ row }) => <div className='capitalize'>{row.getValue('tableNumber')}</div>,
+    filterFn: (row, columnId, filterValue: string) => {
+      if (filterValue === undefined) return true
+      return simpleMatchText(String(row.original.tableNumber), String(filterValue))
+    }
   },
   {
     accessorKey: 'createdAt',

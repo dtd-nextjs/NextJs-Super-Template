@@ -99,7 +99,7 @@ export function TablesDialog({ onChoose }: { onChoose: (table: TableItem) => voi
       </DialogTrigger>
       <DialogContent className='sm:max-w-[600px] max-h-full overflow-auto'>
         <DialogHeader>
-          <DialogTitle>Chọn món ăn</DialogTitle>
+          <DialogTitle>Chọn bàn</DialogTitle>
         </DialogHeader>
         <div>
           <div className='w-full'>
